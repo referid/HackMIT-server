@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+# PURGE DATABASE
 import json
 import time
 import couchdb

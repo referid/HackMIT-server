@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+# UPLOAD DATABASE
 import json
 import time
 import couchdb
@@ -25,27 +26,10 @@ class referid:
       for values in csvreader:
         doc = dict(zip(headers,values))
         print(doc) # display it
-        self.db.save(doc) # add it
-  
-  ## get single document
-  def get(self):
-    docfile = raw_input('Enter Doc key to GET: ')
-    doc = self.db[docfile]
-    print(doc)
-  
-  ## single document
-  def delete(self):
-    docfile = raw_input('Enter Doc key to DELETE: ')
-    doc = self.db[docfile]
-    self.db.delete(doc)
-    print(doc)
-    
-  ## all documents in database
-  def purge(self):
-    for docfile in self.db:
-      doc = self.db[docfile]
-      self.db.delete(doc)
-      print(doc)
+        try:
+          self.db.save(doc) # add it
+        except Exception:
+          self.db.update(doc)
       
 if __name__ == '__main__':
   session = referid()
