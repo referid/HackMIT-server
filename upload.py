@@ -13,8 +13,7 @@ class referid:
     DATABASE = sys.argv[1]
     server = couchdb.Server()
     self.db = server.create(DATABASE) # if database doesn't exist
-    except Exception:
-      self.db = server[DATABASE] # assuming database exists
+    # self.db = server[DATABASE] # assuming database exists
   
   ## upload from csv
   def upload(self):
