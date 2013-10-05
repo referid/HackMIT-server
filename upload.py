@@ -10,10 +10,9 @@ class referid:
 
   ## connect to db
   def __init__(self):
-    DATABASE = str(sys.argv[1])
-    try:
-      server = couchdb.Server()
-      self.db = server.create(DATABASE) # if database doesn't exist
+    DATABASE = sys.argv[1]
+    server = couchdb.Server()
+    self.db = server.create(DATABASE) # if database doesn't exist
     except Exception:
       self.db = server[DATABASE] # assuming database exists
   
