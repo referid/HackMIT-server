@@ -1,0 +1,5 @@
+# HackMIT - Server
+
+## Remote Futon with SSH Tunnel
+ssh -f -L localhost:15984:127.0.0.1:5984 root@referid.co -N
+http://localhost:15984/_utils
