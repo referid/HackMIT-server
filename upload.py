@@ -25,6 +25,7 @@ class referid:
       headers = csvreader.next() # get first row of headers
       for values in csvreader:
         doc = dict(zip(headers,values))
+        doc['manufacture_date'] = str(time.time())
         print(doc) # display it
         try:
           self.db.save(doc) # add it
