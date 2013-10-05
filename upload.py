@@ -21,7 +21,7 @@ class referid:
   def upload(self):
     CSVFILE = sys.argv[2]
     with open(CSVFILE, 'rb') as csvfile:
-      csvreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+      csvreader = csv.reader(csvfile, delimiter='|', quotechar='`')
       headers = csvreader.next() # get first row of headers
       for values in csvreader:
         doc = dict(zip(headers,values))
