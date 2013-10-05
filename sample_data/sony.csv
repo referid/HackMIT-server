@@ -1,3 +1,3 @@
-_id|label|phone|manual|model
-3b396e53|Sony Dynamic Stereo Headphones (Professional)|+1-239-768-7547|http://esupport.sony.com/US/p/model-home.pl?mdl=MDR7509HD|MDR7506
-3bc5ee2f|Sony Vizio E-Series 42" LCD TV|+1-877-698-4946|http://store.vizio.com/documents/downloads/hdtv/E420iA1/UM_E420iA1.pdf|E420i-A1
+_id|company|label|phone|manual|model
+396e53|3b|Sony Dynamic Stereo Headphones (Professional)|+1-239-768-7547|http://esupport.sony.com/US/p/model-home.pl?mdl=MDR7509HD|MDR7506
+c5ee2f|3b|Sony Vizio E-Series 42" LCD TV|+1-877-698-4946|http://store.vizio.com/documents/downloads/hdtv/E420iA1/UM_E420iA1.pdf|E420i-A1
