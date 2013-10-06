@@ -1,4 +1,4 @@
-_id|firstname|lastname|password 
-00000001|trevor|stanhope|abcd1234
-00000002|martin|weiss|password
-00000003|chris|friesen|12341234
+_id|username|password|history
+00000001|trevor|abcd1234|[]
+00000002|martin|abcd|[/3b/396e53]
+00000003|chris|12341234|[]
